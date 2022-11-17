@@ -19,12 +19,21 @@ header img{
 }
 
     /* Estilos de navegador*/
+nav ul{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;  
+}
 
 nav ul li{
     list-style: none;
     padding: 1rem;
    display: inline-flex;
    
+}
+
+ header nav ul li:hover{
+    transform: scale(0.9);
 }
 
 nav ul li a{
@@ -36,7 +45,8 @@ nav ul li a{
 
  .menu{
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
+    flex-wrap: nowrap;  ;
     justify-content: space-between;
     align-items: center;
     
@@ -59,6 +69,8 @@ main{
     font-size: 4.5rem;
     margin-bottom: 20px;
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;  
     text-align: center;
     justify-content: center;
     
@@ -82,6 +94,8 @@ main .orden{
     font-size: 1.5rem;
     display: flex;
     justify-content: center;
+    flex-direction: row;
+   flex-wrap: nowrap;  
 }
     /* posicion de la imagen de home*/
 
@@ -89,6 +103,12 @@ main .orden{
     display: flex;
     justify-content: center;
     padding: 10px;
+    flex-direction: row;
+   flex-wrap: nowrap;  
+ }
+ 
+ .fotobienvenidos:hover{
+    filter: drop-shadow(2px 2px 2px);
  }
 
     /* estilos y posicionamiento de formulario*/
@@ -109,7 +129,12 @@ main .orden{
 
 .nosotrosvintage {
     width: 25rem;
+    height: 25rem;
     margin: 1rem;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;  
+    justify-items: center;
 
 }
 
@@ -119,9 +144,14 @@ main .orden{
     text-align: center;
     color: rebeccapurple;
     font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;  
+    justify-content: center;
  }
 
  /*Estilo y posicion de img y mapas html servicios*/
+
 
  .mardelplata{
         display: grid;
@@ -145,7 +175,6 @@ main .orden{
     
 .cumpleanitos{
         width: 25rem;
-        display: flex;
         
      }
 
@@ -246,9 +275,10 @@ main .orden{
 
 footer {
     margin-right: 0px;
-    background-color: rgb(128, 179, 238);
-    background-color:rgb(248, 236, 222);
+    background-color: rgb(125, 116, 255);
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;  
     justify-content: space-around;
     align-items: center;
 }
@@ -256,13 +286,12 @@ footer {
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 15px;
-    color: blue;
-    
+    color: whitesmoke;
     
  }
  .redes{
     text-align: center;
-    color: blue;
+    color: whitesmoke;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     align-items: center;
 
@@ -270,4 +299,8 @@ footer {
  
  footer h3{
     color: black;
+ }
+
+ @media screen and (min-width:0) and (max-width:660 ) {
+    
  }
